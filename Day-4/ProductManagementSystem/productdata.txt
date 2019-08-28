@@ -1,0 +1,3 @@
+1,dell xps,67000,new laptop from dell
+2,motog,13000,new mobile from motorola
+3,the alchemist,699,new book by the author paul coelho

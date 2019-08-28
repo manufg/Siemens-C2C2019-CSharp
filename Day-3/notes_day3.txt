@@ -1,0 +1,49 @@
+a person is outstanding or not?
+		Person
+-------------------------------------------------
+		name
+		subject	
+		bool IsOutstanding()
+		string ToString()
+Student				Professor
+--------------------------------------------------
+marks				booksPublished
+bool IsOutstanding()		bool IsOutstanding()
+string ToString()		string ToString()
+>=85				>=5
+
+
+
+			IShape
+			double CalculateArea()
+
+Circle			Triangle		Rectangle
+----------------------------------------------------------
+radius			tBase			length		
+			tHeight			breadth
+
+double CalculateArea()  double CalculateArea() double CalculateArea()
+
+Has-A
+------------------
+Association:
+
+Aggregation:
+Composition: 
+
+class Room: roomid, roomname
+class Building: buildingid, buildingname
+
+employee: name, id, salary
+department: name, id
+
+
+
+
+
+
+
+
+
+
+

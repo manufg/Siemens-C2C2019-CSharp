@@ -1,0 +1,82 @@
+DotNet Platform:
+
+A. DotNet Framework Components: 4.8, VS 2019
+	a. Base class/Framework class library
+	b. CLR (Common Language Runtime)
+	c. ADO.NET (ActiveX Data Object .NET)
+	d. ASP.NET (Active Server Pages .NET)
+	e. User Interface
+
+B. DotNet Products:
+	a. IDE/Editor: VS 2017, VS Code, Blend
+	b. Servers: SQL Server, Biztalk Server, Commerce Server, Host Integration server...
+
+C. DotNet Services:
+	a. Windows services
+	b. Web Services
+
+
+2017:
+DotNet Core: 
+cross-platofrom apps, open source
+DotNet Core Runtime, Roslyn compiler, dotnet core/sdk library
+ASP.NET MVC Core
+1.0, 1.1, 2.0, 2.1, 2.2, 3.0
+
+
+Languages: C#, VC++, VB.NET, Managed Extensions to C++
+Framework: DotNet Framework
+Editor: Visual Studio
+
+CLR (mscoree.dll): micorosoft common object runtime execution engine
+
+version info:
+framework	C#	VS	CLR
+-------------------------------------
+1.0		1.0	2002	1.0
+1.1		1.1	2003	1.1
+2.0		2.0	2005	2.0
+3.0		3.0	----	2.0
+3.5		3.5	2008	2.0
+4.0		4.0	2010	4.0
+
+Execution cycle:
+
+1. OS allocates the process memory blocks
+2. it hands over rest of the responsibility to a host application (shim.exe/VS/web server - IIS, Tomcat..)
+3. host app uses mscoree.h (C++ header file) to load the CLR (mscoree.dll) in the process
+4. CLR creates the default domain in the process
+5. application is loaded into the domain along with referenced libraries
+6. the application's IL code will be JIT compiled to machine level code as well as referenced library's IL code is also JIT compiled
+7. code is executed
+
+Assembly:[output file - Portable/Executable file]
+a. Intermediate Language Code (IL/CIL/MSIL code)
+b. Assmebly Metadata/Manifest: general information about an assembly
+c. Type Metadata/Metainfo: information about the types that you have decalred or indirectly used (object) in your application
+d. Headers:
+	1. Win32 header: windows OS library related info
+	2. CLR Header: version of .NET Framework used to create the application
+
+Tool to view the assembly: ILDASM
+Intermediate Language DisAssembler
+path: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\ildasm.exe
+
+class and objects:
+a. access specifiers - class: public and internal (default)
+b. access specifiers - class members: private (default), protected, public,  internal, protected internal
+access modifiers: abstract, sealed, static
+
+solution name:
+	HRMSAPP
+
+library name:
+	HRMSAPP.Entities
+	Employee.cs -- Employee
+	name, id, basicpayment, dapayment, hrapayment
+
+console app name:
+	HRMSAPP.UserInterface
+	Progran --> Main(), additional functions
+
+

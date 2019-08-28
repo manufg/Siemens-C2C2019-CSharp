@@ -1,0 +1,73 @@
+	    //1. get the file path from config file
+            //2. get all data from file
+            //2.a. read one line at a time from the file
+            //2.b. split the sentence by comma
+            //2.c. create Product object
+            //2.d. assign each value (after splitting the sentence) to each property of the Product object
+            //2.e. save the product object reference in an array
+            //2.f. return the array of product objects
+
+
+
+value type
+	implicit conversion: lower range - higher range
+	int --> long
+	int a = 10;
+	long l = a;
+
+	explicit conversion: higher range - lower range
+	
+	long l = 1234567890013;
+	
+	a. casting:
+	int a = (int)l;
+	
+	b. convert class method:
+	int a = Convert.ToInt32(l);
+
+reference type
+	
+	implicit conversion: child class - base class
+	A obj = new B();
+	object obj1 = new B();
+
+	explicit conversion: base class - child class
+	B obj = new A(); //not possible
+	A obj = new B(); //possible
+	
+	a. Casting:
+	A obj = new B();
+	B obj2 = (B)obj;
+	
+	b. 'as' operator:
+	A obj = new B();
+	B obj2 = obj as B;
+
+Reference type --- value type:
+-----------------------------------
+VT --> RT => implicit conversion (Boxing)
+-----------------------------------------------
+short a = 12;
+object objA = a;
+
+int x = 20;
+Console.WriteLine(x.ToString());
+
+RT --> VT => explicit conversion (Unboxing)
+--------------------------------------------
+short b = (short)objA;
+
+string str = Console.ReadLine();
+int y = int.Parse(str);
+//or
+int y = Convert.ToInt32(str);
+
+
+
+
+
+
+
+
+
+
