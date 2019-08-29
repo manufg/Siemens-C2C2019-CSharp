@@ -1,0 +1,10 @@
+Error:
+	a. compile time error
+	b. runtime error
+
+	1. creates an object an exception class
+	2. populates the object with data
+	3. runtime throws the object reference to you
+
+			Exception
+	SystemException		ApplicationException
