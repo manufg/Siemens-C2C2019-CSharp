@@ -11,11 +11,35 @@ namespace Assignment2
         static void Main()
         {
             Console.Write("enter sentence to split: ");
-            var result = new WordFrequency().GetWordFrequency(Console.ReadLine());
-            foreach (var item in result)
+            try
             {
-                Console.WriteLine($"{item.Key}:{item.Value}");
+                var result = new WordFrequency().GetWordFrequency(Console.ReadLine());
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"{item.Key}:{item.Value}");
+                }
             }
+            catch (NullReferenceException ex)
+            {
+                PrintException(ex);
+            }
+            catch (ArgumentException ex)
+            {
+                PrintException(ex);
+            }
+            catch (FormatException ex)
+            {
+                PrintException(ex);
+            }
+            catch (Exception ex)
+            {
+                PrintException(ex);
+            }
+        }
+
+        private static void PrintException(Exception ex)
+        {
+            Console.WriteLine(ex);
         }
     }
 }
